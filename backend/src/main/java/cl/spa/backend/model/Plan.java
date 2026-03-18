@@ -1,4 +1,3 @@
-
 package cl.spa.backend.model;
 
 import jakarta.persistence.*;
@@ -7,13 +6,13 @@ import jakarta.persistence.*;
  *
  * @author Duoc
  */
+
 @Entity
 @Table(name="plan")
-
 public class Plan {
+    
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    
     private Long id;
     private String nombre;
     private String descripcion;
@@ -59,6 +58,7 @@ public class Plan {
     public void setPrecio(double precio) {
         this.precio = precio;
     }
+    
     
     
 }
